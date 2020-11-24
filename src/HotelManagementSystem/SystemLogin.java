@@ -122,7 +122,6 @@ public class SystemLogin extends javax.swing.JFrame {
         jCheckBox1.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         jCheckBox1.setText("Show Password");
         jCheckBox1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jCheckBox1.setOpaque(false);
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1ActionPerformed(evt);
@@ -234,7 +233,7 @@ public class SystemLogin extends javax.swing.JFrame {
         /*SETTING USER AND PASSWORD */
         if (jTextField1.getText().equals("admin") && jPasswordField1.getText().equals("admin")) {
             setVisible(false);
-            new home().setVisible(true);
+            //new home().setVisible(true);
         }
         else
             JOptionPane.showMessageDialog(null,"Incorrect username or password");
