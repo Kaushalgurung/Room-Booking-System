@@ -1,9 +1,7 @@
 package HotelManagementSystem;
 
 
-import HotelManagementSystem.home;
 import javax.swing.JOptionPane;
-import java.awt.EventQueue;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

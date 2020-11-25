@@ -9,7 +9,7 @@ package HotelManagementSystem;
  *
  * @author user
  */
-public class HotelManagementSystem {
+public class HotelManagementSystem implements Comparable<HotelManagementSystem> {
     
     public HotelManagementSystem(int entryNum, int RoomNo, int Price, String RoomType, int days, String date, String status) {
         this.entryNum = entryNum;
@@ -73,20 +73,17 @@ public class HotelManagementSystem {
     public String getdate(){
         return date;
     }
-    public void setstatus(String status){
+    public void setStatus(String status){
         this.status= status;
     }
-    public String getstatus(){
+    public String getStatus(){
         return status;
     }
-
-
-
+    @Override
+    public int compareTo(HotelManagementSystem o) {
+        return Integer.toString(this.getPrice()).compareTo(Integer.toString(o.getPrice()));
+    }
     /**
      * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+     */  
 }
