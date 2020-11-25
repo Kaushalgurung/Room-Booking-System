@@ -10,20 +10,24 @@ package HotelManagementSystem;
  * @author user
  */
 public class HotelManagementSystem {
-
-    public HotelManagementSystem(int entryNum, int RoomNo, int price, String roomType, int days) {
+    
+    public HotelManagementSystem(int entryNum, int RoomNo, int Price, String RoomType, int days, String date, String status) {
         this.entryNum = entryNum;
         this.RoomNo = RoomNo;
-        this.price = price;
-        this.roomType = roomType;
+        this.Price = Price;
+        this.RoomType = RoomType;
         this.days = days;
+        this.date= date;
+        this.status= status;
     }
-    
-    int entryNum;
-    int RoomNo;
-    int price;
-    String roomType;
-
+        int entryNum;
+        int RoomNo;
+        int Price;
+        String RoomType;
+        int days;
+        String date;
+        String status;
+        
     public int getEntryNum() {
         return entryNum;
     }
@@ -41,19 +45,19 @@ public class HotelManagementSystem {
     }
 
     public int getPrice() {
-        return price;
+        return Price;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setPrice(int Price) {
+        this.Price = Price;
     }
 
     public String getRoomType() {
-        return roomType;
+        return RoomType;
     }
 
-    public void setRoomType(String roomType) {
-        this.roomType = roomType;
+    public void setRoomType(String RoomType) {
+        this.RoomType = RoomType;
     }
 
     public int getDays() {
@@ -63,7 +67,19 @@ public class HotelManagementSystem {
     public void setDays(int days) {
         this.days = days;
     }
-    int days;
+    public void setdate(String date){
+        this.date = date;
+    }
+    public String getdate(){
+        return date;
+    }
+    public void setstatus(String status){
+        this.status= status;
+    }
+    public String getstatus(){
+        return status;
+    }
+
 
 
     /**
